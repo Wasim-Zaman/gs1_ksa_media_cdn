@@ -18,7 +18,7 @@ pipeline {
                     branches: [[name: '*/main']], 
                     extensions: [], 
                     userRemoteConfigs: [[
-                        credentialsId: 'Wasim-Jenkins-Credentials', 
+                        credentialsId: 'wasim-jenkins-gs1', 
                         url: 'https://github.com/GS1-Saudi-Arabia/gs1_ksa_media_cdn.git'
                     ]]
                 )
