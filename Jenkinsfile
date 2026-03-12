@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ENV_FILE_PATH = "C:\tools\Jenkins\Envs\gs1-ksa-media-cdn"
+        ENV_FILE_PATH = "C:\\tools\\Jenkins\\Envs\\gs1-ksa-media-cdn"
     }
 
     options {
