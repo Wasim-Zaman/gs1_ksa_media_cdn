@@ -1,7 +1,9 @@
+import fs from "fs";
+import path from "path";
+
+
 import "dotenv/config";
 import express from "express";
-import path from "path";
-import fs from "fs";
 
 const app = express();
 
@@ -24,11 +26,11 @@ app.use((req, _res, next) => {
   next();
 });
 
-app.use("/", express.static(resolvedPath));
-
-app.use("/test", (req, res) => {
+app.get("/test", (req, res) => {
   res.json({ message: "Test endpoint is working!" });
 });
+
+app.use("/", express.static(resolvedPath));
 
 app.listen(PORT, () => {
   console.log(`✅ Serving "${resolvedPath}" at http://localhost:${PORT}`);
