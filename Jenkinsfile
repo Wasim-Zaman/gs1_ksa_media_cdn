@@ -19,7 +19,7 @@ pipeline {
                     extensions: [], 
                     userRemoteConfigs: [[
                         credentialsId: 'wasim-jenkins-gs1', 
-                        url: 'https://github.com/GS1-Saudi-Arabia/gs1_ksa_media_cdn.git'
+                        url: 'https://github.com/Wasim-Zaman/gs1_ksa_media_cdn.git'
                     ]]
                 )
             }
