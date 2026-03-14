@@ -26,6 +26,10 @@ app.use((req, _res, next) => {
 
 app.use("/", express.static(resolvedPath));
 
+app.use("/test", (req, res) => {
+  res.json({ message: "Test endpoint is working!" });
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Serving "${resolvedPath}" at http://localhost:${PORT}`);
 });
