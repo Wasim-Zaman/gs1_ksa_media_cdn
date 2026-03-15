@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "my-app",
+      name: "gs1_media_cdn",
       script: "npm",
       args: "start",
       env: {
